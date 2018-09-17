@@ -1,20 +1,39 @@
-<div style="text-align:centre">
+<!--The content below is only a placeholder and can be replaced.-->
 
-<hr>
-
-<!-- <div class="panel panel-danger">
-  <div class="panel-body">
-
-<ul>
-    <div *ngFor='let quote of quotes'>
-        <li >{{quote.id}}</li> 
-        <li>{{quote.description}}</li>
+<div class="container-fluid">
+        <div style="text-align:center">
+          <div class="panel panel-info">
+            <div class="panel-body"></div>
+              <h1>
+                <!-- {{ title }} -->
+              </h1>
+              <div class="jumbotron">
+                  <h1>QUOTES</h1>
+                  <hr>
+              </div>
+            <div class="container">
+              <div class="row">
+                <div *ngFor="let quote of quotes; let i = index">
+             
+               <div id="{{i}}">
+                 <p>{{quote.name}}</p>
+                 <p>{{quote.description}}</p>
+                  <p>{{quote.author}}</p>
+                  <button class="btn btn-success btn-md"  (click)='like(i)'>like</button>
+                  <button class="btn btn-danger btn-md" (click)='dislike(i)'>dislike</button>
+                  <button class="btn btn-info btn-md" (click)='delete(i)'>delete</button>
         
-    </div>
-</ul>
-
-</div>
-
-</div>
-
-</div>-->
+              </div>
+                </div>
+            </div>
+            </div>
+             <app-quote-form></app-quote-form>
+        
+        
+         </div>
+        </div>
+        </div>
+        
+        
+        
+        
