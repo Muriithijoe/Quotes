@@ -11,12 +11,19 @@
      <ul>
        <li *ngFor='let quote of quotes'>{{quote.name}}</li>
        <li *ngFor='let quote of quotes'>{{quote.description}}</li>
+       <li *ngFor='let quote of quotes'>{{quote.author}}</li>
+       <button class="btn btn-success btn-md"  (click)='like(i)'>like</button>
+
+       <button class="btn btn-danger btn-md" (click)='dislike(i)'>dislike</button>
+
+       <button class="btn btn-info btn-md" (click)='delete(i)'>delete</button>
      </ul>
      <app-quote-form></app-quote-form>
+     <app-quote></app-quote>
 
 
  </div>
 </div>
-<app-quote></app-quote>
+
 
 

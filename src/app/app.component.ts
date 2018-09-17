@@ -8,8 +8,8 @@ import {Quote} from './quote'
 })
 export class AppComponent {
   quotes = [
-    new Quote('Wiseman', 'Dear Maths grow up and start solving your own problems'),
-    new Quote('Mhenga', 'If hardwork pays show me a rich donkey'),
+    new Quote('Wiseman', 'Dear Maths grow up and start solving your own problems', 'George kim'),
+    new Quote('Mhenga', 'If hardwork pays show me a rich donkey', 'the Gag'),
   ]
 
   
