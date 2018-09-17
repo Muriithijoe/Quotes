@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
     new Quote('Mhenga', 'If hardwork pays show me a rich donkey', 'the Gag'),
   ]
 
+  addNewQuote(quote){
+    this.quotes.push(quote)
+  }
+
 
 
   constructor() { }
