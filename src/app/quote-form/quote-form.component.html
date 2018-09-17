@@ -3,10 +3,10 @@
             <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
                 <!-- Name Form -->
                 <div class="form-group">
-                    <label for="name">Author's Name</label>
-                    <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+                    <label for="author">Author's Name</label>
+                    <input type="text"  class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
                     
-                    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                         <p>Author's Name is Required</p>
                         
                     </div>
@@ -23,9 +23,9 @@
                     <!--Uploaders Name Form -->
                 <div class="form-group">
                         <label for="name">Submiited By:</label>
-                        <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="author" #author="ngModel" required>
+                        <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
                         
-                        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                             <p>Your Name is Required</p>
                             
                         </div>

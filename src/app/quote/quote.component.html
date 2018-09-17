@@ -20,14 +20,16 @@
                  <p>{{quote.description}}</p>
                   <p>{{quote.author}}</p>
                   <button class="btn btn-success btn-md"  (click)='like(i)'>like</button>
+                  {{quote.likes}}
                   <button class="btn btn-danger btn-md" (click)='dislike(i)'>dislike</button>
+                  {{quote.dislike}}
                   <button class="btn btn-info btn-md" (click)='delete(i)'>delete</button>
         
               </div>
                 </div>
             </div>
             </div>
-             <app-quote-form></app-quote-form>
+             <app-quote-form (isComplete)= 'deleteQuote($event,i)'></app-quote-form>
         
         
          </div>

@@ -1,15 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Kavoon', cursive;
     font-size: 30px;
-    background-color: skyblue;
+    background-color: grey;
+    text-align: center;
 }
 
 .jumbotron{
-    background-color: black;
-    font-family: fantasy;
+    background-color: grey;
+    font-family: 'Libre Barcode 128 Text', cursive;
     text-emphasis-color: red;
-    font-size: 40px;
+    font-size: 150px;
 }
 
