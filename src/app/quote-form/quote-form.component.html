@@ -1,6 +1,6 @@
 <div class="container-fluid">
         <div class="row">
-            <form #quoteForm='ngForm'>
+            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
                 <!-- Name Form -->
                 <div class="form-group">
                     <label for="name">Author's Name</label>
@@ -37,4 +37,4 @@
             </form>
         </div>
     </div>
-    Now
+    

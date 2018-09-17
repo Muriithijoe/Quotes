@@ -9,12 +9,20 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote('Wiseman', 'Dear Maths grow up and start solving your own problems', 'George kim'),
-    new Quote('Mhenga', 'If hardwork pays show me a rich donkey', 'the Gag'),
+    new Quote('Wiseman', 'Dear Maths grow up and start solving your own problems', 'George kim', 0, 0),
+    new Quote('Mhenga', 'If hardwork pays show me a rich donkey', 'the Gag', 0, 0),
   ]
 
   addNewQuote(quote){
     this.quotes.push(quote)
+  }
+
+  like(index) {
+    this.quotes[index].likes += 1;
+  }
+
+  dislike(index) {
+    this.quotes[index].dislike += 1;
   }
 
 
