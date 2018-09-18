@@ -4,15 +4,15 @@
 
 https://muriithijoe.github.io/Quotes/
 
-#**Description**
+**Description**
 
 This is a site where you can post, like and dislike quotes
 
-#**By**
+**By**
 
 Joe Muriithi
 
-#**Setup Installation requirements**
+**Setup Installation requirements**
 
 ~Once you receive link to site 
 
