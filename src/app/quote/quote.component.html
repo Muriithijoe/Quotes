@@ -11,11 +11,8 @@
                   <h1>QUOTES</h1>
                   <hr>
               </div>
-            <div class="container">
-              <div class="row">
-                <div *ngFor="let quote of quotes; let i = index">
-             
-               <div id="{{i}}">
+            <div *ngFor="let quote of quotes; let i = index">
+               <div>
                  <p>{{quote.name}}</p>
                  <p>{{quote.description}}</p>
                   <p>{{quote.author}}</p>
@@ -23,17 +20,12 @@
                   {{quote.likes}}
                   <button class="btn btn-danger btn-md" (click)='dislike(i)'>dislike</button>
                   {{quote.dislike}}
-                  <button class="btn btn-info btn-md" (click)='delete(i)'>delete</button>
-        
+                  <button class="btn btn-info btn-md" (click)='deleteQuote(true,i)'>delete</button>
               </div>
-                </div>
             </div>
             </div>
-             <app-quote-form (isComplete)= 'deleteQuote($event,i)'></app-quote-form>
-        
-        
+             <app-quote-form (addQuote)= 'addNewQuote($event)'></app-quote-form>
          </div>
-        </div>
         </div>
         
         
