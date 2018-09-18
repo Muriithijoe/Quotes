@@ -1,12 +1,12 @@
-#QUOTES
+**QUOTES**
 
-#Description
+#**Description**
 This is a site where you can post, like and dislike quotes
 
-#By
+#**By**
 Joe Muriithi
 
-#Setup Installation requirements
+#**Setup Installation requirements**
 ~Once you receive link to site 
 ~Open your browser and run the link
 ~If you have an internet connection it will take you to the site
